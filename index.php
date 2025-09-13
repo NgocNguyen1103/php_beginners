@@ -6,22 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="includes/formHandler.php" method="post">
-        <label for="firstname">First name:</label>
-        <input id="firstname" type="text" name="firstname" placeholder="Firstname"><br>
-        <label for="lastname">Last name: </label>
-        <input type="text" id="lastname" name="lastname" placeholder="Lastname"><br>
+    <!-- String operator -->
+    <?php  
 
-        <label for="favoritepet">Favorite Pet?</label>
-        <select name="favouritepet" id="favouritepet">
-            <option value="none">None</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="bird">Birst</option>
-        </select><br>
-        <button type="submit" name="submit">Submit</button>
+    //concatinate
+    $a = "Hello";
+    $b= "World!<br>";
+    $c = $a . " " . $b;
+    echo $c;
+    ?>
 
-    </form>
+    <!-- Arithmetic operator -->
+    <?php
+    echo 1 + 2 . "<br>";
+    echo 1 * 2 . "<br>";
+    echo 10 % 3 . "<br>";
+    echo 10 ** 3 . "<br>" //power
+    ?>
+
+    <!-- Comparison -->
+    <?php
+    $a = 2;
+    $b = "2";
+    if($a === $b){ //type and value
+        echo "true";
+    } else{
+        echo 'false';
+    }
+
+    echo $a == $b;  //compare value
+    echo "<br>";
+    ?>
+
+    <!-- Logical -->
+    <?php
+    //&&: and
+    //||: or
+    ?>
+
+    <?php 
+    $a = 2;
+    echo ++$a; //add -> echo
+    echo $a++; //echo -> add
+    echo $a
+    ?>
 
 </body>
 </html>

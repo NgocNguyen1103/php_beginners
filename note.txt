@@ -1,0 +1,4 @@
+
+<?php php code will be inside this tag, always end with semicolumn; ?> 
+$: now we declare a variable
+echo: return to the browser
